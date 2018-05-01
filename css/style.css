@@ -17,23 +17,26 @@ Generic Styling, for Desktops/Laptops
 
 
 table { 
-  width: 100%; 
-  border-collapse: collapse; 
+/*  width: 700%; 
+  border-collapse: collapse; */
+    max-width: 100%;
+    height: auto;
 }
 /* Zebra striping */
 tr:nth-of-type(odd) { 
   background: #white; 
 }
 th { 
-  background: #333; 
+  background: #E1ACAF; 
   color: white; 
   font-weight: bold; 
   font-family: "Giorgio",Helvetica,Arial,sans-serif;
   padding: 1em;
 }
+
 td, th { 
   padding: 6px; 
-  border: 1px solid #ccc; 
+  border: 0.5px solid #E1ACAF;  
   text-align: left; 
   font-family: "Giorgio",Helvetica,Arial,sans-serif;
   padding: 1em;
@@ -49,6 +52,7 @@ a {
 /*	letter-spacing: 2px;*/
 	color: #1a1a1a;
 	text-decoration: none;
+
 }
 
 a:hover{
@@ -59,3 +63,61 @@ a:hover{
 p {
   font-family: "Giorgio",Helvetica,Arial,sans-serif;
 }
+
+#text {
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+/*#coverage {
+  padding-left: 3em;
+  padding-right: 3em;
+  background-color: none;
+}
+
+*/
+
+img {
+    max-width: 800px;
+    height: auto;
+  padding-left: 3em;
+  padding-right: 3em;
+
+}
+
+
+@media only screen and (max-width: 1230px) {
+
+img {
+    width: auto;
+    height: auto;
+  padding-left: 3em;
+  padding-right: 3em;
+
+}
+}
+
+
+@media only screen and (max-width: 768px) {
+
+img {
+    width: auto;
+    height: auto;
+      padding-left: 3em;
+  padding-right: 3em;
+
+}
+}
+
+
+@media only screen and (max-width: 400px) {
+
+img {
+    width: auto;
+    height: auto;
+      padding-left: 3em;
+  padding-right: 3em;
+
+}
+}
+
